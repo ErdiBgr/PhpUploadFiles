@@ -17,7 +17,7 @@ function uploadFiles($files=NULL,$mime_type=NULL,$path=NULL,$mb=3){
 					if ($size <= $mb) {
 						$save = move_uploaded_file($tmp_name, $path.$extension);
 						if ($save) {
-							return True;
+							return "upload_scs";
 						}else{
 							return "upload_err";
 						}
