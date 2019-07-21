@@ -1,5 +1,6 @@
 <?php
 function uploadFiles($files=NULL,$mime_type=NULL,$path=NULL,$mb=3){
+	error_reporting(0);
 	if (!$files == NULL || $mime_type == NULL || $path == NULL) {
 		$name = $files["name"];
 		$type = $files["type"];
